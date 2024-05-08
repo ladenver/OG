@@ -21,9 +21,16 @@
             <h1 margin-top:20px;">Coming</h1>
             <h2>Soon!</h2>
             <p>Meanwhile, please sign-up for our newsletter</p>
-            <form method="GET">
-                <input type="email" placeholder="Your email" />
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="bafb4c91-f4d5-4423-a664-7be2bc9871e8">
+                
+                
+                <input type="email" placeholder="Your email" name="email" required>
+             
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
                 <button type="submit" class="btn">send</button>
+            
             </form>
             <p>or connect with us !</p>
             <div class="social_connects">
